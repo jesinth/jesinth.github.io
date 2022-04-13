@@ -7,9 +7,9 @@
          // app url handling
          window.addEventListener('hashchange', handleUrlChange);
          function handleUrlChange(){
-            if(window.location.hash == "prepaid"){
+            if(window.location.hash == "#prepaid"){
                loadPrepaidModule() 
-            }else if(window.location.hash == "postpaid"){
+            }else if(window.location.hash == "#postpaid"){
               loadPostpaidModule()
             }else{
               loadHome()
