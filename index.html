@@ -3,11 +3,17 @@
   <head lang="en">
       <meta charset="UTF-8">
       <title>Single Page Application</title>
+      <script>
+          window.addEventListener('popstate', handleUrlChange);
+         function handleUrlChange(){
+            console.log(window.location.pathname)
+         }
+      </script>
   </head>
   <body>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/kb">About</a></li>
     </ul>
     <div id="app">
 
