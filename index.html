@@ -7,10 +7,10 @@
          // app url handling
          window.addEventListener('hashchange', handleUrlChange);
          function handleUrlChange(){
-            if(window.location.hash == "kb"){
-               loadKbModule() 
-            }else if(window.location.hash == "chat"){
-              loadChatModule()
+            if(window.location.hash == "prepaid"){
+               loadPrepaidModule() 
+            }else if(window.location.hash == "postpaid"){
+              loadPostpaidModule()
             }else{
               loadHome()
             }
@@ -49,14 +49,14 @@
         } 
         
           
-        function loadKbModule(){
+        function loadPrepaidModule(){
            let contentDiv= getDocumentById("content");
            contentDiv.innerHTML= "KB content"
            uninstallAsap()//  uninstall the last  opened asap add on
            loadAsap("https://desk.localzoho.com/portal/api/web/inapp/22926000006600015?orgId=54224261")
         }
         
-        function loadChatModule(){
+        function loadPostpaidModule(){
           let contentDiv= getDocumentById("content");
           contentDiv.innerHTML= "Chat content";
 
