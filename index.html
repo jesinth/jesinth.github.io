@@ -51,14 +51,14 @@
           
         function loadPrepaidModule(){
            let contentDiv= document.getElementById("content");
-           contentDiv.innerHTML= "KB content"
+           contentDiv.innerHTML= "Prepaid content"
            uninstallAsap()//  uninstall the last  opened asap add on
            loadAsap("https://desk.zoho.com/portal/api/web/inapp/402000043875008?orgId=4240387")
         }
         
         function loadPostpaidModule(){
           let contentDiv= document.getElementById("content");
-          contentDiv.innerHTML= "Chat content";
+          contentDiv.innerHTML= "Post paid content";
 
           uninstallAsap()//  uninstall the last  opened asap add on
           loadAsap("https://desk.zoho.com/portal/api/web/inapp/402000097082001?orgId=4240387");
@@ -71,7 +71,7 @@
 
         function loadHome(){
           let contentDiv= document.getElementById("content");
-          contentDiv.innerHTML= "Home content";
+          contentDiv.innerHTML= "Home";
           uninstallAsap()
           
           
@@ -87,8 +87,8 @@
   <body onload="loadHome()">
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#prepaid">Prepaid </a></li>
-      <li><a href="#postpaid">Postpaid</a></li>
+      <li><a href="#prepaid">KB - Prepaid category </a></li>
+      <li><a href="#postpaid">KB Postpaid category</a></li>
     </ul>
     <div id="app">
         <div id="content"></div>
