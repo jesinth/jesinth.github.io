@@ -50,14 +50,14 @@
         
           
         function loadPrepaidModule(){
-           let contentDiv= getDocumentById("content");
+           let contentDiv= document.getElementById("content");
            contentDiv.innerHTML= "KB content"
            uninstallAsap()//  uninstall the last  opened asap add on
            loadAsap("https://desk.localzoho.com/portal/api/web/inapp/22926000006600015?orgId=54224261")
         }
         
         function loadPostpaidModule(){
-          let contentDiv= getDocumentById("content");
+          let contentDiv= document.getElementById("content");
           contentDiv.innerHTML= "Chat content";
 
           uninstallAsap()//  uninstall the last  opened asap add on
@@ -70,7 +70,7 @@
         }
 
         function loadHome(){
-          let contentDiv= getDocumentById("content");
+          let contentDiv= document.getElementById("content");
           contentDiv.innerHTML= "Home content";
           
           
