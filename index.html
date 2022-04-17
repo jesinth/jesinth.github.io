@@ -3,6 +3,46 @@
   <head lang="en">
       <meta charset="UTF-8">
       <title>Single Page Application</title>
+      <style>
+          body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+          html, body {
+            width : 100%;
+              height: 100%;
+              background:#f1f1f1
+          }
+          .container {
+            width : 100%;
+              height: 100%;
+              display : flex;
+              flex-direction:column;
+          }
+          .main {
+            flex: auto;
+              min-width:0;
+              min-height:0;
+              justify-content:center;
+              align-items:center;
+              display:flex
+          }
+          header, footer {
+            background-color : #616161;
+            width : 100%;
+            min-height : 130px;
+              justify-content:center;
+              align-items:center;
+              display:flex;
+              font-weight: bold;
+              font-size : 30px;
+              color: #fff
+          }
+          button {
+            padding: 8px;
+              border-radius : 3px
+          }
+          button+button {
+          margin-left : 10px
+      </style>
+
       <script>
          // app url handling
          window.addEventListener('hashchange', handleUrlChange);
@@ -93,4 +133,32 @@
 
     <script src="./index.js"></script>
   </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="w3-light-grey">
+
+<div class="container">
+
+<!-- Header -->
+<header> 
+  Header
+</header>
+<p class='main'>
+	<button>Knowledg base</button>
+    <button>ASAP</button>
+</p>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+ Footer
+</footer>
+</div>
+</body>
 </html>
